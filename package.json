@@ -1,5 +1,5 @@
 {
-  "name": "nba-app",
+  "name": "react-project-nba",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,5 +25,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monirul89/react-project-NBA.git"
+  },
+  "author": "react-project-nba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monirul89/react-project-NBA/issues"
+  },
+  "homepage": "https://github.com/monirul89/react-project-NBA#readme"
 }
