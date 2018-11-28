@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 import Routers from './Routers';
-import Home from './Components/Home/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App =()=>{
     return(
         <BrowserRouter>
-            <div>
+            <div className="container">
                 <Routers />
-                <Home />
             </div>
         </BrowserRouter>
     )
