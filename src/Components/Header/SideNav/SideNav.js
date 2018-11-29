@@ -1,8 +1,8 @@
 import React from 'react';
 import SideNav from 'react-simple-sidenav';
+import SideNavItems from './sideNav_Items';
 
 const SideNavigetion = (props)=>{
-    console.log(props)
     return(
         <div>
             <SideNav
@@ -13,9 +13,7 @@ const SideNavigetion = (props)=>{
                     maxWidth:'220px',
                     color:'#fff'
                 }}>
-                <div><h4 style={{textAlign:'center', marginTop: '10px'}}>MEMUS</h4></div>
-                <div>Home</div>
-                <div>News</div>
+                <SideNavItems/>
             </SideNav>
         </div>
     )
