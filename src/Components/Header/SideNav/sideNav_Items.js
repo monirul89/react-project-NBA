@@ -39,9 +39,21 @@ const SideNavItems = ()=>{
         },
         {
             type: style.option,
-            icon: 'pinterest',
+            icon: 'address-book',
             text: 'About Us',
             link: '/about'
+        },
+        {
+            type: style.option,
+            icon: 'sign-in-alt',
+            text: 'Sign In',
+            link: '/sign-in'
+        },
+        {
+            type: style.option,
+            icon: 'sign-out-alt',
+            text: 'sign-out',
+            link: '/sign-out'
         }
     ]
     const showItems=()=>{
