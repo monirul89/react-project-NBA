@@ -3,7 +3,7 @@ import './header.css'
 import {Link} from 'react-router-dom';
 
 import FontAwesome from 'react-fontawesome';
-
+import SideNav from './SideNav/SideNav';
 
 const Header = (props)=>{
 
