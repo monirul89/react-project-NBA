@@ -3,6 +3,7 @@ import './Layout.css';
 
 // component
 import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 
 class Layout extends Component{
 
@@ -13,9 +14,11 @@ class Layout extends Component{
     render(){
         return(
             <div>
+                
                 <Header/>
                 {this.props.children}
-                Footer
+                <Footer/>
+
             </div>
         )
     }

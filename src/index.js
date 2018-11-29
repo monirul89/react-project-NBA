@@ -8,9 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App =()=>{
     return(
         <BrowserRouter>
-            <div className="container">
-                <Routers />
-            </div>
+            <Routers />
         </BrowserRouter>
     )
 }
