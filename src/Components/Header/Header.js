@@ -12,7 +12,6 @@ const Header = (props)=>{
         return(
             <div className="bars">
                 <FontAwesome name="bars"
-                // onClick={ showNav1 }
                 style={{
                     color:'#dfdfdf',
                     padding:'12px',
