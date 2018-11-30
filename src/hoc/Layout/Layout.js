@@ -3,7 +3,7 @@ import './Layout.css';
 
 // component
 import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
+import Footer from '../../Components/Footer/footer';
 
 class Layout extends Component{
 
@@ -25,6 +25,7 @@ class Layout extends Component{
                 onOpenNav={()=>this.togglesidenav(true)}
                 />
                 {this.props.children}
+                
                 <Footer/>
 
             </div>
