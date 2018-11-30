@@ -6,7 +6,7 @@ import { CURRENT_YEAR } from '../../config';
 
 const footer = ()=>{
     return(
-        <div className="footer" style={{"textAlign":"center"}}>
+        <div className={style.footer} style={{"textAlign":"center"}}>
             <Link
                 to="/" 
                 className="logo">
