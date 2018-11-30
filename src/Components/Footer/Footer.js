@@ -1,12 +1,12 @@
 import React from 'react';
-import style from './footer.css';
+import './footer.css';
 import { Link } from 'react-router-dom';
 
 import { CURRENT_YEAR } from '../../config';
 
 const footer = ()=>{
     return(
-        <div className={style.footer} style={{"textAlign":"center"}}>
+        <div className="footer" style={{"textAlign":"center"}}>
             <Link
                 to="/" 
                 className="logo">

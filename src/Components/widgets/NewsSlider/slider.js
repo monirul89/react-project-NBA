@@ -9,7 +9,7 @@ class NewsSlider extends Component{
     }
 
     componentWillMount(){
-        axios.get('http://localhost:3004/articles?_start=0&_end=3')
+        axios.get('http://localhost:3004/articles?_start='+ this.props.start +'&_end='+this.props.amount)
         // axios.get('http://localhost:3004/videos')
         // axios.get('http://localhost:3004/teams')
         .then( response => {
@@ -21,10 +21,8 @@ class NewsSlider extends Component{
     }
 
     render(){
-
-        console.log(this.state.news)
         return(
-            <SliderTemplates data={this.state.news }/>
+            <SliderTemplates data={this.state.news } type={ this.props.type } settings={ this.props.settings}/>
         )
     }
 }
