@@ -6,12 +6,14 @@
 .newsList_item{
     border:1px solid #f2f2f2;
     background:#fff;
-    margin-top:0;
-    padding:8px 5px 0 5px;
+    margin:8px;
+    padding:10;
+    clear: both;
+    overflow: hidden;
 }
 
 .newsList_item h2{
-    font-size: 13px;
+    font-size: 21px;
     line-height: 21px;
     margin: 5px 0;
     color: #525252;
@@ -31,4 +33,12 @@
 }
 .moreButton {
     background: #fff;
+}
+.listImage {
+    width: 300px;
+    float: left;
+}
+.listImage img {
+    width: 100%;
+    padding: 10px;
 }

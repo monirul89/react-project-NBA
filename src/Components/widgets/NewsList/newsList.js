@@ -28,15 +28,22 @@ class NewsList extends Component{
     renderNews =  (type)=>{
 
         let template = null;
-
+        let imageUrl = '';
         switch(type){
             case ('card'):
                 template =  this.state.items.map( (item, i)=>(
+                    imageUrl = 'http://localhost:3000/images/articles/'+ item.image,
                     <div className="newsList_item">
                         <Link to={'/artticles/'+ item.id}>
-                            <h2>{ item.title }</h2>                            
+                            <div className="listImage">
+                               <img src= {imageUrl} alt={ item.id} />
+                            </div>
+                            <div>
+                                <h2>{ item.title }</h2> 
+                                <p>{item.body}</p>
+                            </div>                           
                         </Link>
-                        <p>{item.body}</p>
+                        
                     </div>
                 ))
                 break;
