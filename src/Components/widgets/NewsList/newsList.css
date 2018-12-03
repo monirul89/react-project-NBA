@@ -13,8 +13,8 @@
 }
 
 .newsList_item h2{
-    font-size: 21px;
-    line-height: 21px;
+    font-size: 24px;
+    line-height: 40px;
     margin: 5px 0;
     color: #525252;
 }
@@ -41,4 +41,8 @@
 .listImage img {
     width: 100%;
     padding: 10px;
+}
+.listPara p {
+    color: #525252;
+    line-height: 35px;
 }

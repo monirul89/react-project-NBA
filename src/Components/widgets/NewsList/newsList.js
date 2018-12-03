@@ -38,7 +38,7 @@ class NewsList extends Component{
                             <div className="listImage">
                                <img src= {imageUrl} alt={ item.id} />
                             </div>
-                            <div>
+                            <div className="listPara">
                                 <h2>{ item.title }</h2> 
                                 <p>{item.body}</p>
                             </div>                           
