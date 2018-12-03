@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import SliderTemplates from './slider_templates';
 
+// Terminal has to write below code
+// json-server --watch db.json --port 3000
+
 class NewsSlider extends Component{
 
     state={
