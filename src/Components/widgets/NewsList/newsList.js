@@ -45,21 +45,26 @@ class NewsList extends Component{
         return template;
     }
             
-            
+    loadMore = ()=>{
+        let end = this.state.end + this.state.amount;
+        this.request(this.state.end, end)
+    }      
 
-        render(){
-            console.log(this.state.items)
-            return(
-                <div>                    
-                    <div className="listArea">
-                        { this.renderNews( this.props.type)}
-                        <div>
-                        LOAD MORE
-                        </div>                    
-                    </div>
+    render(){
+        console.log(this.state.items)
+        return(
+            <div>                    
+                <div className="listArea">
+                    { this.renderNews( this.props.type)}
+                    <div className="moreButton">
+                        <a className="loadMore" onClick={()=>this.loadMore()}>
+                            LOAD MORE
+                        </a>
+                    </div>                    
                 </div>
-            )
-        }
+            </div>
+        )
+    }
 }
 
 export default NewsList;

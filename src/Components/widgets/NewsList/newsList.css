@@ -1,5 +1,7 @@
 .listArea{
     margin-top: 40px;
+    clear: both;
+    overflow: hidden;
 }
 .newsList_item{
     border:1px solid #f2f2f2;
@@ -13,4 +15,20 @@
     line-height: 21px;
     margin: 5px 0;
     color: #525252;
+}
+.loadMore {
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #1e7e34;
+    display: inline-block;
+    clear: both;
+    overflow: hidden;
+    padding: 1px 10px;
+    border-radius: 8px;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 12px;
+}
+.moreButton {
+    background: #fff;
 }
