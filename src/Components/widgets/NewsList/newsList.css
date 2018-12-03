@@ -1,3 +1,16 @@
+.listArea{
+    margin-top: 40px;
+}
 .newsList_item{
-    margin-top: 20px;
+    border:1px solid #f2f2f2;
+    background:#fff;
+    margin-top:0;
+    padding:8px 5px 0 5px;
+}
+
+.newsList_item h2{
+    font-size: 13px;
+    line-height: 21px;
+    margin: 5px 0;
+    color: #525252;
 }
