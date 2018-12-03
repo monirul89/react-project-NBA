@@ -17,8 +17,8 @@ const Home = ()=>{
             <NewsList 
                 type="card"
                 loadmore={true}
-                start={6}
-                amount={6}
+                start={3}
+                amount={3}
             />
         </div>
     )
