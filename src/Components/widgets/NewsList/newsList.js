@@ -34,8 +34,9 @@ class NewsList extends Component{
                 template =  this.state.items.map( (item, i)=>(
                     <div className="newsList_item">
                         <Link to={'/artticles/'+ item.id}>
-                            <h2>{ item.title }</h2>
+                            <h2>{ item.title }</h2>                            
                         </Link>
+                        <p>{item.body}</p>
                     </div>
                 ))
                 break;
