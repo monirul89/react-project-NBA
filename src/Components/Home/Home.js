@@ -1,6 +1,6 @@
 import React from 'react';
 import NewsSlider from '../widgets/NewsSlider/slider';
-
+import NewsList from '../widgets/NewsList/NewsList';
 
 const Home = ()=>{
     return(
@@ -13,6 +13,8 @@ const Home = ()=>{
                 dots:true
             }}
             />
+
+            <NewsList />
         </div>
     )
 }

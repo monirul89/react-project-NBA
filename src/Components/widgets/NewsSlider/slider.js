@@ -3,7 +3,7 @@ import axios from 'axios';
 import SliderTemplates from './slider_templates';
 
 // Terminal has to write below code
-// json-server --watch db.json --port 3000
+// json-server --watch db.json --port 3004
 
 class NewsSlider extends Component{
 
