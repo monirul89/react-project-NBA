@@ -3,6 +3,7 @@
     clear: both;
     overflow: hidden;
 }
+
 .newsList_item{
     border:1px solid #f2f2f2;
     background:#fff;
@@ -11,7 +12,9 @@
     clear: both;
     overflow: hidden;
 }
-
+.newsList_item a {
+    display: inline-block;
+}
 .newsList_item h2{
     font-size: 24px;
     line-height: 40px;
@@ -34,9 +37,16 @@
 .moreButton {
     background: #fff;
 }
-.listImage {
-    width: 300px;
+
+.listImage,
+.listPara{
     float: left;
+}
+.listImage {
+    width: 280px;
+}
+.listPara {
+    width: calc(100% - 280px);
 }
 .listImage img {
     width: 100%;
