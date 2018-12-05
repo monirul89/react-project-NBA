@@ -16,8 +16,8 @@
     display: inline-block;
 }
 .newsList_item h2{
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 25px;
     margin: 5px 0;
     color: #525252;
 }
@@ -43,10 +43,10 @@
     float: left;
 }
 .listImage {
-    width: 280px;
+    width: 30%;
 }
 .listPara {
-    width: calc(100% - 280px);
+    width: calc(100% - 30%);
 }
 .listImage img {
     width: 100%;
@@ -55,4 +55,22 @@
 .listPara p {
     color: #525252;
     line-height: 35px;
+}
+.newsList_wrapper_enter{
+    
+}
+
+
+
+
+.newsList_wrapper{
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease-in;
+}
+
+.newsList_wrapper_enter{
+    opacity: 1;
+    transform: translateX(0%);
 }
