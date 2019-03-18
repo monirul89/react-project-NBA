@@ -3,7 +3,7 @@ import { CSSTranstitionStyle } from 'react-transition-group';
 import { TransitionGroup } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
+import { URL } from '../../../config';
 import './newsList.css';
 
 
@@ -19,7 +19,7 @@ class NewsList extends Component{
         this.request(this.state.start, this.state.end)
     }
     request = (start, end)=>{
-        axios.get(`http://localhost:3004/articles?_start=${start}&_end=${end}`)        
+        axios.get(`${ URL }/articles?_start=${start}&_end=${end}`)        
         .then( Response => {
             this.setState({
                 items:[...this.state.items, ...Response.data]
